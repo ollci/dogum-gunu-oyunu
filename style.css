@@ -1,0 +1,33 @@
+/* Sayfa sıfırlama */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000; /* Yedek arka plan */
+  }
+  
+  /* Tuval (canvas) tam ekran olur */
+  canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Mesaj kutusu (doğum günü mesajı) */
+  #message {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px 40px;
+    border-radius: 12px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 0 10px #fff;
+  }
+  
