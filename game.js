@@ -121,3 +121,17 @@ function loop() {
 }
 
 let gameLoop = requestAnimationFrame(loop);
+
+// Mobil butonlar için
+document.getElementById("leftBtn").addEventListener("touchstart", () => {
+  semos.x -= 30;
+  if (semos.x < 0) semos.x = 0;
+});
+
+document.getElementById("rightBtn").addEventListener("touchstart", () => {
+  semos.x += 30;
+  if (semos.x + semos.width > canvas.width) {
+    semos.x = canvas.width - semos.width;
+  }
+});
+
